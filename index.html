@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pengelengithub</title>
+    <title>Charlottes FAQ</title>
     <style>
         body {
-            background-color: #121212;
+            background-color: #04260e;
             color: #ffffff;
             font-family: Arial, sans-serif;
             margin: 0;
@@ -14,16 +14,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+           
+            position: relative;
         }
         .container {
             text-align: center;
+            max-width: 600px;
+            z-index: 1;
         }
         h1 {
             margin-bottom: 20px;
         }
         p {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
         a {
             color: #1e90ff;
@@ -32,13 +35,75 @@
         a:hover {
             text-decoration: underline;
         }
+        .intro {
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        .question {
+            margin-top: 20px;
+            font-weight: bold;
+			
+        }
+        .answer {
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+		.link {
+            margin-top: 20px;
+            font-style: italic;
+        }
+  .bottom-image {
+            width: 75%;
+            height: auto;
+            margin-top: 20px; /* Ensures image is placed below the container */
+        }
     </style>
 </head>
 <body>
+    
     <div class="container">
-        <h1>pengelen.nl</h1>
-        <p>dus...</p>
-        <a href="https://example.com" target="_blank">Visit Example</a>
-    </div>
+     <H1>FAQ</H1>
+	 
+        <p class="intro">Na een mooi afscheid, jullie warme woorden en waardering en een paar weken vrij kom ik weer terug naar het vertrouwde nest.</p>
+      
+
+        <div class="question">1: Waarom ben je zo snel alweer gestopt?</div>
+        <div class="answer">- Het werk paste niet bij mij. De casussen waren complex en zwaar. De werkdruk hoog en ik miste jullie (en de gekookte eitjes) natuurlijk.</div>
+
+        <div class="question">2: Had je het niet even iets langer aan willen kijken?</div>
+        <div class="answer">- Nee het voelde meteen niet goed. Dit had me mijn mentale gezondheid gekost. Plus blijkbaar is de doelgroep ouderen toch wel echt mijn ding en niet kinderen/jongeren en verslaafden.</div>
+
+        <div class="question">3: Maar we hebben toch net een afscheidsfeestje van je gehad?</div>
+        <div class="answer">- Klopt, was gezellig hè?</div>
+
+        <div class="question">4: En dat cadeau dat ik je heb gegeven dan?</div>
+        <div class="answer">- Drank en chocolade kunnen we samen nuttigen. Wanneer komt het je uit?</div>
+		 
+		 <div class="answer">Ben je het hier niet mee eens? klik dan op onderstaande tikkielink om je geld terug te krijgen.</div>
+		<a href="https://static.wikia.nocookie.net/donaldduck/images/8/87/Animaatjes-dagobert-duck-24932.jpg/revision/latest?cb=20110826094147&path-prefix=nl" target="_blank">
+    <img src="data:image/png;base64,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" alt="Description of Image" style="width: 50px; height: auto;">
+		</a>
+
+        <div class="question">5: En nu?</div>
+        <div class="answer">- Vanaf 1 januari weer terug naar de Margriet waar een super leuk team werkt!</div>
+		
+		<div class="question">6: Hoe waren je vrije weekenden en avonden?</div>
+        <div class="answer">- Heerlijk.</div>
+		
+		<div class="question">7: Maar we hebben zo hard ons best gedaan om een muzieklijst bij elkaar te brengen.</div>
+        <div class="answer">- Super tof! Hier nog een keer de link. Ik heb er zelf ook nog even 5 nummers aan toegevoegd!</div>
+    
+	
+		<a href="https://open.spotify.com/playlist/0EkxyXuBBGCVxzKhUJ9h9a?si=kmEyMLerT66Ahz9hyqAamA&pi=Ig_PYSLcQ-aSl" target="_blank">Magriet Mega Mix, volume 1</a>
+		 
+		 <div class="link">- Mochten er toch nog andere vragen zijn kun je mij de komende 2 maanden op de Zonnebloem tegenkomen en anders vanaf januari op de Margriet.</div>
+		 <div class="question">- Groetjes Charlotte.</div>
+		 	
+			<img class="bottom-image" src="https://i.imgur.com/5PauLzu.jpeg" alt="schilderij">
+		</div>
+
+
+
+		
 </body>
 </html>
